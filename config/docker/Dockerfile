@@ -22,7 +22,7 @@ COPY typings/styled-patch.d.ts /build/typings/styled-patch.d.ts
 
 RUN npm run bundle:standalone
 
-FROM nginx:alpine
+FROM nginx:1.29.3-alpine3.22
 
 ENV PAGE_TITLE="ReDoc"
 ENV PAGE_FAVICON="favicon.png"
